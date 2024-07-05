@@ -10,6 +10,7 @@ interface Props {
     icon?: IconType
     onClick: (e: React.MouseEvent<HTMLButtonElement>) => void
 }
+
 const Button = ({
     label,
     disabled,

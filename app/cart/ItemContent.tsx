@@ -13,7 +13,7 @@ interface Props {
 
 const ItemContent = ({ item }: Props) => {
 
-    const {handleRemoveProductFromCart, handleCartQtyDecrease, handleCartQtyIncrease} = useCart()
+    const { handleRemoveProductFromCart, handleCartQtyDecrease, handleCartQtyIncrease } = useCart()
     return (
         <div className="
         grid grid-cols-5 items-center gap-4
@@ -39,7 +39,7 @@ const ItemContent = ({ item }: Props) => {
                     <div>{item.selectedImage.color}</div>
                     <div className="w-[70px]">
                         <button className="text-slate-500 underline"
-                            onClick={() => {handleRemoveProductFromCart(item)}}
+                            onClick={() => { handleRemoveProductFromCart(item) }}
                         >Remove</button>
                     </div>
                 </div>
@@ -49,8 +49,8 @@ const ItemContent = ({ item }: Props) => {
                 <SetQuantity
                     cartProduct={item}
                     cartCounter={true}
-                    handleQtyDecrease={() => {handleCartQtyDecrease(item)}}
-                    handleQtyIncrease={() => {handleCartQtyIncrease(item)}}
+                    handleQtyDecrease={() => { handleCartQtyDecrease(item) }}
+                    handleQtyIncrease={() => { handleCartQtyIncrease(item) }}
                 />
             </div>
             <div className="uppercase justify-self-end">
